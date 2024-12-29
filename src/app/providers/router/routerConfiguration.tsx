@@ -1,14 +1,15 @@
-import { RouteProps } from "react-router-dom";
 import { AppRoutes } from "../../../shared/configuration/routes/types/AppRoutes";
+import { MainPage } from "../../../pages/MainPage";
+import { NotFoundPage } from "../../../pages/NotFoundPage/ui/NotFoundPage";
+import { ProfileDetailsPage } from "../../../pages/ProfileDetailsPage";
+import { ProfilePage } from "../../../pages/ProfilePage";
+import { RouteProps } from "react-router-dom";
+
 import {
   getRouteMain,
   getRouteProfileDetails,
   getRouteProfiles,
 } from "../../../shared/configuration/routes/routes";
-import { MainPage } from "../../../pages/MainPage";
-import { NotFoundPage } from "../../../pages/NotFoundPage/ui/NotFoundPage";
-import { ProfilePage } from "../../../pages/ProfilePage";
-import { ProfileDetailsPage } from "../../../pages/ProfileDetailsPage";
 
 export const routerConfiguration: Record<AppRoutes, RouteProps> = {
   [AppRoutes.MAIN_PAGE]: {

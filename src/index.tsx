@@ -1,6 +1,7 @@
-import { BrowserRouter } from "react-router-dom";
 import "./index.scss";
 
+import { AppRouter } from "./app/providers/router/AppRouter";
+import { BrowserRouter } from "react-router-dom";
 import { createRoot } from "react-dom/client";
 
 const container = document.getElementById("root");
@@ -13,6 +14,6 @@ const root = createRoot(container);
 
 root.render(
   <BrowserRouter>
-    <div>Hello world</div>
+    <AppRouter />
   </BrowserRouter>
 );

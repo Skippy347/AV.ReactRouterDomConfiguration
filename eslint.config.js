@@ -22,7 +22,7 @@ export default [
           ignoreCase: false,
           ignoreDeclarationSort: false,
           ignoreMemberSort: false,
-          memberSyntaxSortOrder: ["none", "all", "multiple", "single"],
+          memberSyntaxSortOrder: ["none", "all", "single", "multiple"],
           allowSeparatedGroups: false,
         },
       ],

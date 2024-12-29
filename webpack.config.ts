@@ -1,8 +1,9 @@
-import { BuildEnvironmentVariables, BuildPaths } from "./configuration/build/types/configuration";
 import { buildWebpackConfiguration } from "./configuration/build/buildWebpackConfiguration";
 
 import path from "path";
 import webpack from "webpack";
+
+import { BuildEnvironmentVariables, BuildPaths } from "./configuration/build/types/configuration";
 
 export default (env: BuildEnvironmentVariables) => {
   const PATHS: BuildPaths = {
