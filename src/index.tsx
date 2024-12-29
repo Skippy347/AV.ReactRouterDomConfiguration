@@ -1,3 +1,4 @@
+import { BrowserRouter } from "react-router-dom";
 import "./index.scss";
 
 import { createRoot } from "react-dom/client";
@@ -10,4 +11,8 @@ if (!container) {
 
 const root = createRoot(container);
 
-root.render(<div>Hello world</div>);
+root.render(
+  <BrowserRouter>
+    <div>Hello world</div>
+  </BrowserRouter>
+);
